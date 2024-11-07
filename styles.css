@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    background-color: #000000;
+    color: white;
+    font: 16px / 1.7 Open Sans, arial, Helvetica Neue, Helvetica;
+    margin: auto;
+    width: 1500px;
+    min-width: 1024px; /* Giá trị này tương đương chiều rộng của màn hình máy tính */
+    overflow-x: auto;  /* Cho phép cuộn ngang nếu cần */
+}
+.navbar ul {
+    display: flex;
+    margin-right: 50px;
+}
+.namelogo {
+    color: #ffd04d;
+}
+.navbar ul li {
+    margin-left: 100px;
+    font-weight: 700;
+}
+.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    animation: top linear forwards 1s;
+}
+@keyframes top {
+    from {
+        opacity: 0;
+        transform: translateZ(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(40px);
+    }
+}
+.logoGithub {
+    font-size: 40px;
+    margin-right: 70px;
+}
+.home {
+    margin-left: 500px;
+    margin-top: 200px;
+    position: relative;
+}
+.helloworld {
+    color: #ffd04d ;
+    animation: helloworld linear forwards 1s;
+}
+@keyframes helloworld {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.myname {
+    font-size: 700;
+    animation: myname linear forwards .8s;
+}
+@keyframes myname {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.careerColor {
+    color: #ffd04d; 
+    margin-left: 5px;
+}
+.boxCareer {
+    display: flex;
+    height: 35px;
+    width: 100vw;
+    border-right: .15em solid orange;
+    animation: im 4s steps(100 , end), blink-caret .7s step-end forwards;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes im {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+  }
+.Welcome {
+    margin-top: 10px;
+    animation: myname linear forwards .6s;
+}
+@keyframes myname {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.Myimg {
+    border: 2px solid #ffd04d;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    left: 700px;
+    border-radius: 50%;
+    box-shadow: #ffd04d 1px 1px 50px 1px;
+    background-color: transparent;
+    animation: Myimg linear forwards 1s;
+}
+@keyframes Myimg {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-40px);
+    }
+}
+.Myimg img {
+    margin-top: 77px;
+    margin-left: 15px;
+}
+#navbar {
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+  }
+
+  #navbar button {
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 70px;
+    transition: background-color .5s ease ;
+  }
+
+  #navbar button:hover {
+    box-shadow: #ffd04d 1px 1px 15px 1px;
+    background-color: #ffd04d;
+    color: black;
+  }
+
+.content-section {
+    display: none;
+    position: relative;
+}
+
+.visible {
+    display: block;
+}
+.introduce {
+    margin-top: 220px;
+    margin-left: 400px;
+}
+

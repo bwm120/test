@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Presonal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="top">
+        <div class="namelogo">
+            <h1>Lê Văn Bi.</h1>
+        </div>
+        <div class="list">
+          <div id="navbar">
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('about')">About Me</button>
+            <button onclick="showSection('product')">Product</button>
+            <button onclick="showSection('blog')">Blog</button>
+          </div>
+        </div>
+        <div class="logoGithub">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+
+      <div id="home" class="content-section visible">
+        <div class="introduce">
+            <p class="helloworld">Hello world, I'm</p>
+            <h1 class="myname">Lê Văn Bi</h1>
+            <div class="boxCareer"><h3 class="career">Fontend <h3 class="careerColor">Engineer</h3></h3></div>
+            <h5 class="Welcome">Welcome to My Presonal Website.</h5>
+        </div>
+        <div class="Myimg">
+          <img src="pngtree-web-programmer-avatar-png-image_12529202.png" alt="Transparent Image">
+        </div>
+      </div>
+    
+      <div id="about" class="content-section">
+        <h1 class="colorAboutMe">About Me</h1><div class="flex"></div>
+                <div class="myimg2">
+                    <img src="pngtree-web-programmer-avatar-png-image_12529202.png" alt="">
+                </div>
+      </div>
+    
+      <div id="product" class="content-section">
+
+      </div>
+    
+      <div id="blog" class="content-section">
+
+      </div>
+
+   
+</body>
+    <script src="./scripts.js"></script>
+</html>
