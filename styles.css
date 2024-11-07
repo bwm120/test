@@ -16,8 +16,8 @@ body {
     font: 16px / 1.7 Open Sans, arial, Helvetica Neue, Helvetica;
     margin: auto;
     width: 1500px;
-    min-width: 1024px; /* Giá trị này tương đương chiều rộng của màn hình máy tính */
-    overflow-x: auto;  /* Cho phép cuộn ngang nếu cần */
+    min-width: 1024px; 
+    overflow-x: auto;  
 }
 .navbar ul {
     display: flex;
@@ -162,6 +162,8 @@ body {
     cursor: pointer;
     margin-left: 70px;
     transition: background-color .5s ease ;
+    font-weight: 700;
+    font-size: 15px;
   }
 
   #navbar button:hover {
@@ -177,9 +179,431 @@ body {
 
 .visible {
     display: block;
+
 }
 .introduce {
     margin-top: 220px;
     margin-left: 400px;
 }
+.boxAboutMe {
+    margin-left: 100px;
+    margin-top: 50px;
+    border: 2px solid #606060;
+    width: 1240px;
+    height: 550px;
+    background-color: #222222;
+    border-radius: 25px;
+}
+.colorAboutMe {
+    margin-left: 70px;
+    margin-top: 40px;
+    position: relative;
+    animation: leftToRight linear forwards 1s;
+}
+@keyframes leftToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.flex {
+    position: absolute;
+    color: #ffd04d;
+    width: 350px;
+    border: 1px solid;
+    top: 70px;
+    left: 340px;
+    box-shadow: #ffd04d 1px 1px 15px 1px;
+    border-radius: 25px;
+    animation: leftToRight linear forwards 1s;
+}
+@keyframes leftToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.myimg2 {
+    width: 350px;
+    height: 350px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 100px;
+    box-shadow: white 1px 1px 15px 1px;
+    margin-top: 25px;
+    animation: leftToRight linear forwards 1s;
+}
+@keyframes leftToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.myimg2 img {
+    margin-top: 30px;
+    margin-left: -10px;
+}
+.StoryAboutMe {
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    width: 640px;
+    text-indent: 50px;
+    line-height: 35px;
+    padding-right: 35px;
+}
+.StoryAboutMeOne {
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: -15px;
+    box-shadow: white 1px 1px 15px 1px;
+    animation: up linear forwards 1s ;
+    font-weight: 400;
+}
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
+.StoryAboutMeTwo {
+    margin-top: 15px;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: white 1px 1px 15px 1px;
+    animation: upslow linear forwards 1s ;
+    font-weight: 400;
+}
+@keyframes upslow {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.skills {
+    margin-left: 200px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    animation: leftToRight forwards linear 1s;
+}
+@keyframes leftToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.flexOne {
+    position: absolute;
+    border: 1px solid #ffd04d;
+    width: 80px;
+    top: 17px;
+    left: -90px;
+    box-shadow:#ffca37 1px 1px 15px 1px ;
+}
+.flexTwo {
+    position: absolute;
+    border: 1px solid #ffd04d;
+    width: 80px;
+    top: 17px;
+    left: 60px;
+    box-shadow:#ffca37 1px 1px 15px 1px ;
+}
+.boxskill {
+    height: 500px;
+}
+.btnSkills {
+    margin-top: 25px;
+    display: flex;
+    width: 1240px;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.nameSkill {
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    border: 1px solid #ffca37;
+    border-radius: 15px;
+    cursor: pointer;
+    animation: up linear forwards 3s;
+}
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.nameSkill:hover {
+    background-color: #ffd97084;
+    box-shadow:#ffca37 1px 1px 15px 1px ;
+}
+.nameSkill i {
+    margin-top: 14px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.fa-html5 {
+    color: orangered;
+    font-size: 35px;
+}
+.fa-css3-alt {
+    color: rgb(0, 110, 255);
+    font-size: 35px;
+}
+.fa-php {
+    color: rgb(155, 130, 238);
+    font-size: 35px;
+}
+.fa-js {
+    color: yellow;
+    font-size: 35px;
+}
+.fa-laravel {
+    color: red;
+    font-size: 35px;
+}
+.fa-c {
+    color: rgb(142, 0, 142);
+    font-size: 35px;
+}
+.fa-vuejs {
+    color: rgb(47, 255, 168);
+    font-size: 35px;
+}
+.fa-python {
+    color: rgb(170, 255, 0);
+    font-size: 35px;
+}
+.fa-java {
+    color: red;
+    font-size: 35px;
+}
+.fa-react {
+    color: rgb(0, 247, 255);
+    font-size: 35px;
+}
+.fa-bootstrap {
+    color: rgb(187, 0, 255);
+    font-size: 35px;
+}
+.fa-node-js {
+    color: green;
+    font-size: 35px;
+}
+.nameSkill label {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.boxPastProject{
+    display: flex;
+    width: 1240px;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.boxproject {
+    border: 1px solid white;
+    width: 350px;
+    height: 450px;
+    background-color: #1d1d1d;
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-top: 25px;
+    animation: up linear forwards 1s;
+}
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.boxproject img {
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-top: 25px;
+    object-fit: cover;
+}
+.PastProject {
+    text-align: center ;
+    margin-top: 50px;
+    animation: out linear forwards 4s;
+}
+@keyframes out {
+    from {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(40px);
+    }
+}
+.ETP {
+    color: #ffca37;
+}
+.paraProject {
+    font-size: 15px;
+    padding-left: 15px;
+    text-indent: 30px;
+    color: #cfcfcf;
+}
+.boxproject label  {
+    margin-left: 150px;
+    font-weight: 700;
+}
+.boxproject a  {
+    position: absolute;
+    margin-left: 15px;
+    top: 400px;
+}
+.boxPastProject {
+    height: 550px;
+}
+.boxBlog {
+    width: 700px;
+    height: 200px;
+    border: 1px solid white;
+    margin-left: 150px;
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: #1d1d1d;
+    animation: up linear forwards 1s;
+}
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(40px);
+    }
+}
+.last {
+    position: relative;
+}
+.letsTalk {
+    position: absolute;
+    top: 0;
+    left: 1000px;
+    animation: rightToleft linear forwards 1s;
+}
+@keyframes rightToleft {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.flexFour {
+    position: absolute;
+    top: 60px;
+    border: 1px solid #ffca37;
+    width: 200px;
+}
+.topic {
+    position: absolute;
+    top: 90px;
+    font-weight: 700;
+}
+.btnhtml-css-js button {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 15px 25px;
+}
+.btnhtml-css-js {   
+    position: absolute;
+    top: 130px;
+}
+.btnhtml {
+    padding: 10px;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    outline: none;
+}
+.btnhtml button {
+    
+}
+.btncss {
+    color: white;
+}
+.btnjs {
+    color: white;
+}
+.Target {
+    color: #ffca37;
+}
+.date {
+    color: #888888;
+}
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(255, 225, 0, 0.3);
+}
+
+.custom-button:hover {
+    background-color: #ffd04d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(255, 213, 0, 0.943);
+}
+
+.custom-button:active {
+    background-color: #ffca37;
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(255, 213, 0, 0.3);
+}

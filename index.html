@@ -17,7 +17,7 @@
         </div>
         <div class="list">
           <div id="navbar">
-            <button onclick="showSection('home')">Home</button>
+            <button class="btnhome" onclick="showSection('home')">Home</button>
             <button onclick="showSection('about')">About Me</button>
             <button onclick="showSection('product')">Product</button>
             <button onclick="showSection('blog')">Blog</button>
@@ -41,18 +41,135 @@
       </div>
     
       <div id="about" class="content-section">
-        <h1 class="colorAboutMe">About Me</h1><div class="flex"></div>
-                <div class="myimg2">
-                    <img src="pngtree-web-programmer-avatar-png-image_12529202.png" alt="">
-                </div>
+        <div class="boxAboutMe">
+          <h1 class="colorAboutMe">About Me</h1><div class="flex"></div>
+          <div class="myimg2">
+              <img src="pngtree-web-programmer-avatar-png-image_12529202.png" alt="">
+          </div>
+          <div class="StoryAboutMe">
+            <p class="StoryAboutMeOne">
+              Là một sinh viên năm nhất ngành Kỹ thuật phần mềm tại Đại học FPT, bạn đang bước đầu tiếp cận thế giới lập trình web. Với nền tảng cơ bản về HTML, CSS và JavaScript, bạn bắt đầu học cách xây dựng các trang web từ những phần cơ bản như giao diện người dùng (UI) đến các yếu tố tương tác
+            </p>
+            <p class="StoryAboutMeTwo">
+              Ngoài kiến thức kỹ thuật, bạn cũng phát triển kỹ năng tư duy logic và giải quyết vấn đề – những yếu tố quan trọng cho việc lập trình hiệu quả. Bên cạnh đó, chương trình học tại Đại học FPT còn rèn luyện kỹ năng làm việc nhóm qua các dự án thực tế, giúp bạn làm quen với cách làm việc nhóm trong môi trường chuyên nghiệp
+            </p>
+          </div>
+        </div>
+        <div class="roll">
+          <div class="boxskill">
+            <div class="skills">
+              <div class="flexOne"></div><div>Skills</div><div class="flexTwo"></div>
+            </div>
+            <div class="btnSkills">
+              <div class="nameSkill"><img src="" alt=""><i class="fa-brands fa-html5"></i><label for="">HTML</label></img></div>
+              <div class="nameSkill"><img src="" alt=""><i class="fa-brands fa-css3-alt"></i><label for="">CSS</label></img></div>
+              <div class="nameSkill"><img src="" alt=""><i class="fa-brands fa-php"></i><label for="">PHP</label></img></div>
+              <div class="nameSkill"><img src="" alt=""><i class="fa-brands fa-js"></i><label for="">JavaScript</label></img></div>
+              <div class="nameSkill"><img src="" alt=""><i class="fa-brands fa-laravel"></i><label for="">Laravel</label></img></div>
+              <div class="nameSkill"><img src="" alt=""><i class="fa-solid fa-c"></i><label for=""></label></img></div>
+              <div class="nameSkill"><img src="" alt=""><i class="fa-brands fa-vuejs"></i><label for="">VueJS</label></img></div>
+              <div class="nameSkill"><img src="" alt=""><i class="fa-brands fa-python"></i><label for="">Python</label></img></div>
+              <div class="nameSkill"><img src="" alt=""><i class="fa-brands fa-java"></i><label for="">Java</label></img></div>
+              <div class="nameSkill"><img src="" alt=""><i class="fa-brands fa-react"></i><label for="">ReactJS</label></img></div>
+              <div class="nameSkill"><img src="" alt=""><i class="fa-brands fa-bootstrap"></i><label for="">Bootstrap</label></img></div>
+              <div class="nameSkill"><img src="" alt=""><i class="fa-brands fa-node-js"></i><label for="">NodeJS</label></img></div>
+            </div>
+          </div>
+        </div>
       </div>
     
       <div id="product" class="content-section">
-
+        <div class="PastProject">
+          <h1>Past Project Experience</h1>
+          <p class="ETP">Explore the projects I've worked on so far</p>
+        </div>
+        <div class="boxPastProject">
+          <div class="boxproject">
+            <img width="300px" height="200px"  src="Ảnh chụp màn hình 2024-11-08 011640.png" alt="">
+            <label for="" class="nameProject">My CV</label>
+            <p class="paraProject">Hiện tại, tôi là sinh viên năm nhất ngành Công nghệ Thông tin, chuyên ngành Kỹ thuật Phần mềm tại Đại học FPT, nơi tôi đã nhận được học bổng 100% cho toàn bộ chương trình học.</p>
+            <a href="" class="cre">HTML-CSS-JS</a>
+          </div>
+          <div class="boxproject">
+            <img width="300px" height="200px" src="Ảnh chụp màn hình 2024-11-08 011742.png" alt="">
+            <label for="" class="nameProject">Mắt Sen</label>
+            <p class="paraProject">Mắt sen là một loại thực phẩm khá phổ biến trong ẩm thực Việt Nam, được biết đến với nhiều lợi ích sức khỏe. </p>
+            <a href="" class="cre">HTML-CSS-JS</a>
+          </div>
+          <div class="boxproject">
+            <img width="300px" height="200px"  src="Ảnh chụp màn hình 2024-11-08 011936.png" alt="">
+            <label for="" class="nameProject">Log In</label>
+            <p class="paraProject">
+              Log in (hay Sign in) là quá trình người dùng xác thực danh tính của mình trên một hệ thống, ứng dụng hoặc trang web bằng cách nhập thông tin đăng nhập</p>
+            <a href="" class="cre">HTML-CSS-JS</a>
+          </div>
+        </div>
       </div>
     
-      <div id="blog" class="content-section">
-
+      <div id="blog" class="content-section last">
+        <div class="boxBlog">
+            <div class="flexthree"></div><div class="date">Ngày 8 Tháng 11 Năm 2024</div>
+            <div class="Target">Lập Trình Web</div>
+            <p>Xin chào tất cả mọi người! Mình là [Tên của bạn], hiện là sinh viên năm nhất ngành Công nghệ Thông tin, chuyên ngành Kỹ thuật Phần mềm. Mình tạo blog này để chia sẻ hành trình học tập, những trải nghiệm cá nhân, và kiến thức về lập trình và công nghệ.</p>
+        </div>
+        <div class="letsTalk">
+          <div class="together">Hãy chia sẽ những kiến thức và bài học cùng nhau</div>
+          <div class="flexFour"></div>
+          <div class="topic">Topic</div>
+          <div class="btnhtml-css-js">
+            <button class="custom-button">HTML</button>
+            <button class="custom-button">CSS</button>
+            <button class="custom-button".custom-button {
+              padding: 10px 20px;
+              font-size: 16px;
+              font-weight: bold;
+              color: #fff;
+              background-color: #007bff;
+              border: none;
+              border-radius: 8px;
+              cursor: pointer;
+              transition: background-color 0.3s, transform 0.3s;
+              box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+          }
+          
+          .custom-button:hover {
+              background-color: #0056b3;
+              transform: translateY(-2px);
+              box-shadow: 0 6px 8px rgba(0, 123, 255, 0.4);
+          }
+          
+          .custom-button:active {
+              background-color: #003d82;
+              transform: translateY(0);
+              box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+          }
+          .custom-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+        }
+        
+        .custom-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 123, 255, 0.4);
+        }
+        
+        .custom-button:active {
+            background-color: #003d82;
+            transform: translateY(0);
+            box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+        }
+        >JS</button>
+          </div>
+        </div>
       </div>
 
    
